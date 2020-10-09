@@ -1,0 +1,110 @@
+[10/09/2020 15:51:56] Job information:
+"CommandLine":[
+  "$(engine.path)\\accoreconsole.exe /i \"$(args[inputFile].path)\" /al \"$(appbundles[Adsk_BatchPublish_v3].path)\" /s \"$(settings[script].path)\" "
+]
+"Settings":{
+  "script": {
+    "value": "BatchPublishCmd\n"
+  },
+  "dasreportfaileduploadoptional": {
+    "value": "true",
+    "isEnvironmentVariable": true
+  }
+}
+"Id":"33af411b9c69404a9d9fd00c1304da1a"
+"ActivityId":"moogalm.Adsk_BatchPublish_v3+prod"
+"Engine.Id":"Autodesk.AutoCAD!26"
+"Apps": [
+"App.Id":"moogalm.Adsk_BatchPublish_v3!22"
+]
+"BoundArguments":{
+  "inputFile": {
+    "localName": "$(HostDwg)",
+    "url": "http://download.autodesk.com/Masked:xJbxeBjW8pcah1nRnLYyPydz5i0="
+  },
+  "inputZip": {
+    "zip": true,
+    "localName": "export",
+    "url": "https://developer.api.autodesk.com/Masked:evAwwyUoty5WFZH0CGINUjoD+y8="
+  },
+  "Result": {
+    "localName": "result.pdf",
+    "url": "https://developer.api.autodesk.com/Masked:DfVaH9umwamfVSHwPDri0txDmBE=",
+    "verb": "put"
+  },
+  "onProgress": {
+    "ondemand": true,
+    "url": "https://wlnr5sjl3a.execute-api.us-east-1.amazonaws.com/Masked:UK/Z3b5X3xUWxXiH6C9r9i9UlRU=",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-das-authorize": "awssigv4(us-east-1)",
+      "x-ads-token-data": "{\"access_token\":{\"client_id\":\"TahpeDJe69AxGGAnk4iBpBNvCJGuMskw\"},\"scope\":\"code:all\",\"expires_in\":3592,\"client_id\":\"TahpeDJe69AxGGAnk4iBpBNvCJGuMskw\"}"
+    },
+    "verb": "put"
+  }
+}
+"Quotas":{
+  "limitProcessingTimeSec": 100,
+  "limitTotalUncompressedAppsSizeInMB": 500
+}
+[10/09/2020 15:51:56] Starting work item 33af411b9c69404a9d9fd00c1304da1a
+[10/09/2020 15:51:56] Start download phase.
+[10/09/2020 15:51:56] Start downloading input: verb - 'GET', url - 'http://download.autodesk.com/us/support/files/autocad_2015_templates/acad.dwt'
+[10/09/2020 15:51:56] Start downloading input: verb - 'GET', url - 'https://developer.api.autodesk.com/oss/v2/signedresources/b61f880d-74d9-4b72-83f7-b8e29954277b?region=US'
+[10/09/2020 15:51:56] Redirected, download from https://download.autodesk.com/us/support/files/autocad_2015_templates/acad.dwt instead.
+[10/09/2020 15:51:56] Time spent on downloading from redirected url is 0.1381595 seconds.
+[10/09/2020 15:51:56] '31419' bytes have been written to T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\acad.dwt.
+[10/09/2020 15:51:56] End downloading file 'http://download.autodesk.com/us/support/files/autocad_2015_templates/acad.dwt'.
+[10/09/2020 15:51:57] '4778961' bytes have been written to T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\zip_46.zip.
+[10/09/2020 15:51:57] End downloading file 'https://developer.api.autodesk.com/oss/v2/signedresources/b61f880d-74d9-4b72-83f7-b8e29954277b?region=US'.
+[10/09/2020 15:51:58] T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\zip_46.zip has been unpacked to folder T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\export.
+[10/09/2020 15:51:58] End download phase successfully.
+[10/09/2020 15:51:59] Start preparing script and command line parameters.
+[10/09/2020 15:51:59] Command line: [ /i "T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\acad.dwt" /al "T:\Aces\Applications\a24567096075bf7e3830bfb63b2e8c94.moogalm.Adsk_BatchPublish_v3[22].package" /s "T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\setting_script.scr" ]
+[10/09/2020 15:51:59] End preparing script and command line parameters.
+[10/09/2020 15:51:59] Start script phase.
+[10/09/2020 15:51:59] ### Command line arguments: /isolate HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_33af411b9c69404a9d9fd00c1304da1a "T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\userdata" /exe "T:\Aces\AcesRoot\24.0\coreEngine\Exe\accoreconsole.exe"  /i "T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\acad.dwt" /al "T:\Aces\Applications\a24567096075bf7e3830bfb63b2e8c94.moogalm.Adsk_BatchPublish_v3[22].package" /s "T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\setting_script.scr" .
+[10/09/2020 15:51:59] Start AutoCAD Core Engine standard output dump.
+[10/09/2020 15:51:59] Redirect stdout (file: T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\tmp\accc39002).
+[10/09/2020 15:51:59] AcCoreConsole: StdOutConsoleMode: processed-output: disabled,auto
+[10/09/2020 15:51:59] AutoCAD Core Engine Console - Copyright 2020 Autodesk, Inc.  All rights reserved. (R.47.Z.169)
+[10/09/2020 15:51:59] Execution Path:
+[10/09/2020 15:51:59] T:\Aces\AcesRoot\24.0\coreEngine\Exe\accoreconsole.exe
+[10/09/2020 15:51:59] Current Directory: T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a
+[10/09/2020 15:51:59] Isolating to regkey=HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_33af411b9c69404a9d9fd00c1304da1a, userDataFolder=T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\userdata.
+[10/09/2020 15:51:59] Version Number: R.47.Z.169 (UNICODE)
+[10/09/2020 15:52:01] Regenerating model.
+[10/09/2020 15:52:01] AutoCAD menu utilities loaded.
+[10/09/2020 15:52:01] Command:
+[10/09/2020 15:52:01] Command:
+[10/09/2020 15:52:01] Command:
+[10/09/2020 15:52:01] Command: BatchPublishCmd
+[10/09/2020 15:52:01]  Current Directory T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a
+[10/09/2020 15:52:01]  Exported drawings are found here T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\export
+[10/09/2020 15:52:01]  Drawing to be plotted T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\export\DA4R-Sheet-A001-TitleSheet.dwg
+[10/09/2020 15:52:01]  Drawing to be plotted T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\export\DA4R-Sheet-A101-SitePlan.dwg
+[10/09/2020 15:52:01]  Drawing to be plotted T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\export\DA4R-Sheet-A102-Plans.dwg
+[10/09/2020 15:52:01]  Drawing to be plotted T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\export\DA4R-Sheet-A103-Elevations-Sections.dwg
+[10/09/2020 15:52:01]  Drawing to be plotted T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\export\DA4R-Sheet-A104-Elev--Sec--Det-.dwg
+[10/09/2020 15:52:11]  Drawing to be plotted T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\export\DA4R-Sheet-A105-Elev--StairSections.dwg
+[10/09/2020 15:52:12] End AutoCAD Core Engine standard output dump.
+[10/09/2020 15:52:12] End script phase.
+[10/09/2020 15:52:12] Start upload phase.
+[10/09/2020 15:52:12] Uploading 'T:\Aces\Jobs\33af411b9c69404a9d9fd00c1304da1a\result.pdf': verb - 'PUT', url - 'https://developer.api.autodesk.com/oss/v2/signedresources/7edc2383-7722-4389-8d3e-99fc67328efa?region=US'
+[10/09/2020 15:52:12] End upload phase successfully.
+[10/09/2020 15:52:12] Job finished with result Succeeded
+[10/09/2020 15:52:12] Job Status:
+{
+  "status": "success",
+  "reportUrl": "https://dasprod-store.s3.amazonaws.com/workItem/moogalm/33af411b9c69404a9d9fd00c1304da1a/report.txt?AWSAccessKeyId=ASIATGVJZKM3EB245JS6&Expires=1602262416&x-amz-security-token=IQoJb3JpZ2luX2VjEBAaCXVzLWVhc3QtMSJHMEUCIQDyQ3kstgGhO1ROWeHFMpRqtafWLKjkpGilnL8DG0anJQIgKLibaCW1qtgEaJvcR2pdzCN%2FznqzLnCNU1mvrmrYwK8q1QEISBACGgwyMjA0NzMxNTIzMTAiDOzV71FeeGXhLDxL9CqyAYr8OsockatdXAIlDA6Ax7ZavlRGDVwurQ55Wj7dsHxUoMXgfXyUrZXwc9a6NsBxZgtdFNv0LbkiUs09DHaRc7i%2BeZ4ApQdaJNdK7q2jqIR0lEW7fWuAdK397ojDv78ZnJwnXTq4xwTjGNy70g6dZHa1i%2B5IPM9MH3gABqQILfGup4h89P3W4lPlFOSnJSytiSABk7600l2iuf6qQk0aRAGaA6Yhgp9pOvFHiAqa6JZr8W4w0%2FuB%2FAU64AFbBMcT2nQYsIGlHXF3Iqgt9%2BhAfZhSARADauoy8aRXHF20e3aLpeKAy%2BK5a3PTfyr9Xfn%2Bo0hMCcIQxdv1A%2BtOvTW9OjvbHaIcP9diH13S0g3oTso3EaTg0bDhir0h7F3ZmFIZpMrl6CCLZrBjGjU8%2FHpA3iME0915KmHi%2FkKbbQ7XchfpgAAnqiSDY%2FtzwRb9ZZL9iXGUF13LZ8RgqxpkyNd21I4ejAmIxlG%2F8LKRWbNKqTkCRxDWVnQHE%2FOE6wm8tepZAOCCRea15Dyav2yO1j9kPMQbN8DiAx7e6JvPGQ%3D%3D&Signature=vL0ViJmanQUyr4PKPrgzGNZmSLk%3D",
+  "stats": {
+    "timeQueued": "2020-10-09T15:51:55.9381823Z",
+    "timeDownloadStarted": "2020-10-09T15:51:56.1770204Z",
+    "timeInstructionsStarted": "2020-10-09T15:51:59.0252603Z",
+    "timeInstructionsEnded": "2020-10-09T15:52:12.7584642Z",
+    "timeUploadEnded": "2020-10-09T15:52:12.9941071Z",
+    "bytesDownloaded": 4810380,
+    "bytesUploaded": 1725681
+  },
+  "id": "33af411b9c69404a9d9fd00c1304da1a"
+}

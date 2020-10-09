@@ -1,0 +1,102 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Publishing Multiple Drawings to PDF</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+       
+    <link rel="stylesheet"
+          href="js/bootstrap/dist/css/bootstrap.min.css"/>
+    <link href="css/site.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!-- Fixed navbar by Bootstrap: https://getbootstrap.com/examples/navbar-fixed-top/ -->
+
+    <nav class="navbar fixed-top navbar-inverse navbar-dark bg-secondary">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav left">
+                <li>
+                    <a href="http://developer.autodesk.com" target="_blank">
+                        <img alt="Autodesk Forge"
+                             src="//developer.static.autodesk.com/images/logo_forge-2-line.png"
+                             height="20" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a class="github-fork-ribbon right-top"
+           href="https://url.to-your.repo"
+           data-ribbon="Fork me on GitHub"
+           title="Fork me on GitHub">Fork me on GitHub</a>
+    </nav>
+    <div class="container" id="containerId">       
+        <div class="row">
+            <div class="col col-lg-2">
+                <div class="btn-group" role="group">
+                    <button class="btn btn-dark" id="prev">Previous</button>
+                    <button class="btn btn-dark" id="next">Next</button>
+                    <button class="btn btn-info">
+                        Page: <span id="page_num"></span> / <span id="page_count"></span>
+                    </button>                   
+                </div>                
+            </div>            
+        </div>
+        <div class="row">
+            <div class="col-md-9" id="pdfViewId">
+                <canvas id="pdf-canvas"
+                        style="border: 2px solid black; direction: ltr;">
+                </canvas>
+                
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-dark">
+                    <div class="d-flex flex-column">
+                        <div class="p-2">
+                            <div class="btn btn-dark">
+                                <label for="inputFile"><i class="fas fa-upload"></i>Input Drawing Zip</label>
+                                <form id="fileUploadForm" name="uploadForm" class="form-control-file">
+                                    <div>
+                                        <input id="inputFile" type="file" name="myFile">
+                                        selected files: <span id="fileNum">0</span>;
+                                        total size: <span id="fileSize">0</span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <button class="btn btn-dark" id="startWorkitem">
+                                <i class="fas fa-chalkboard-teacher"></i> Start Process
+                            </button>
+                        </div>
+                        <div class="p-2" id="downloadId" style="display: none;">
+                            <a href="#" class="btn-dark">
+                                <i class="fas fa-download"></i>
+                               Download Result
+                            </a>
+                        </div>
+                        <div class="p-2">
+                            <pre id="outputlog"></pre>
+                            <div id="spinner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/pdf.js/pdf.js"></script>
+    <!--<script src="js/pdfViewer.js"></script>-->
+    <script src="https://kit.fontawesome.com/2f447868ae.js"
+            crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script src="js/jquery/dist/jquery.min.js"></script>
+    <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="js/signalr/dist/browser/signalr.min.js"></script>
+    <script src="js/forgeDesignAutomation.js"></script>
+</body>
+</html>
