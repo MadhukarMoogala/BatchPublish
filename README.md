@@ -7,7 +7,7 @@
 
 # Workflow
 
-![Workflow.png](https://github.com/MadhukarMoogala/da-azfunc/blob/master/DA-AzureFunctions.png)
+![Workflow.png](https://github.com/MadhukarMoogala/BatchPublish/blob/master/workFlow.png)
 
 # Setup
 ## Prerequisites
